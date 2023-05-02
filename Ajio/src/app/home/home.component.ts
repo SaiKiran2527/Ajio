@@ -7,7 +7,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  constructor(private router: Router) { }
+  constructor(private router: Router) { 
+    alert("Got you my Myannn!!!😆😛")
+  }
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
