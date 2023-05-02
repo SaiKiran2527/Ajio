@@ -1,0 +1,21 @@
+<div id="sect1"class="container"><h1>Enter the correct password to unlock the SURPRISE!!!</h1>
+<br>
+<label>Username : </label>
+<input type="text" value="MY MYAN" disabled>
+<br>
+<br>
+<label>Password : </label>
+<input type="text" #password>
+<br>
+<br>
+<button class="btn default" (click)="verify(password.value)">Unlock Surprise</button>
+<h3>Note : You can obtain the password only by completing the quiz</h3>
+
+<h4>Click here to take Quiz</h4>
+<button class="btn default" [routerLink]="['/questions']">Take Quiz</button>
+
+
+<h4>Click here to go back to home page</h4>
+<button class="btn default" [routerLink]="['/']">Go Back Home</button>
+<br><br><br><br><br><br><br><br><br><br><br>
+</div>

@@ -1,0 +1,8 @@
+#sect1 {   
+    background-image: url("../../assets/Images/bg2.jpg");  
+    background-size: 100 % ;  
+    background-size: cover; 
+    height:100%;
+  width:100%;
+  overflow:hidden; 
+}   

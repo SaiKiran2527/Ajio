@@ -1,0 +1,15 @@
+<div id="sect1"class="container">
+    
+<div *ngIf="!visi"><<h3>Click here for Surprise!!</h3><button class="btn default" (click)="visiChange()">Surprise</button></div>
+
+
+<div *ngIf="visi"><img src="../../assets/Images/Surprise.jpeg" height="520" alt="Surprise Baby Girl"><br><h3>2 Tickets for Srh vs Lsg!!</h3>
+    <h3>Wish you a very Happy Birthday once again Baby Girl!!</h3>
+
+<button class="btn default" (click)="popUp()">Hide Surprise</button></div>
+
+<br>
+<br>
+<button class="btn default" [routerLink]="['/']">Back to Home</button>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>

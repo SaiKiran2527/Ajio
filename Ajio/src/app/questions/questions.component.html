@@ -1,0 +1,30 @@
+
+<div id="sect1"class="container">
+
+<h1>Jist of the Movie</h1>
+<p>{{questions[j].question}}</p><form role="form" id="quizform" name="quizform" action="quiztest.asp?qtest=HTML" method="post">
+    <input type="hidden" name="starttime" value="4/5/2022 9:03:52 AM">
+    <input type="hidden" name="answers" value="0000000000000000000000000000000000000000">
+    <input type="hidden" name="nextnumber">
+    <input type="hidden" name="prevnumber" value="1">
+    <h2> Guess the Movie</h2>
+    <div style="position:relative;width:100%;">
+      <div id="altcontainer" class="notranslate">
+        <label class="radiocontainer" id="label2"> <input type="radio" name="quiz" id="2" value="{{questions[j].option1}}" (change)="optionChange($event)"><span class="checkmark"></span> {{questions[j].option1}} </label>
+        <br><label class="radiocontainer" id="label1"> <input type="radio" name="quiz" id="1" value="{{questions[j].option2}}" (change)="optionChange($event)"><span class="checkmark" ></span> {{questions[j].option2}} </label>
+        <br><label class="radiocontainer" id="label3"> <input type="radio" name="quiz" id="3" value="{{questions[j].option3}}" (change)="optionChange($event)"><span class="checkmark" ></span> {{questions[j].option3}} </label>
+        <br><label class="radiocontainer" id="label4"> <input type="radio" name="quiz" id="4" value="{{questions[j].option4}}" (change)="optionChange($event)"><span class="checkmark" ></span> {{questions[j].option4}} </label>
+        <br>
+      </div>
+    </div>
+    <div id="answerbuttoncontainer">
+      <br>
+      <button class="btn default" type="submit" (click)="clickNextButton()">Submit Answer</button>
+      
+    </div>
+  </form>
+<br>
+
+  <button class="btn default" routerLink="/" (click)="EndQuiz()">End Quiz</button>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>

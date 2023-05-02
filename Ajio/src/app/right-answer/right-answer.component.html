@@ -1,0 +1,18 @@
+<div id="sect1"class="container">
+<div *ngIf="j<count-1"><h3>{{msg}}</h3><br><button class="btn default" routerLink="/questions" (click)="nextQuestion()">Next ></button></div>
+
+<div *ngIf="j==count-1"><h3>Congratulations on finishing the Quiz, you can now unlock the surprise  </h3><br>
+    <div *ngIf="visi">Click here for the Hint for the Password    <button class="btn default" (click)="visiChange()">Hint</button></div>
+    <div *ngIf="!visi"><div *ngFor="let question of questions; index as i;">
+        <span style="color:red;">{{question.answer[0]}}</span> {{      question.answer.slice(1,question.answer.length) }}
+    </div>
+    <button class="btn default" (click)="visiChange()">Close Hint</button>
+</div>
+
+<br>
+<button class="btn default" [routerLink]="['/surprise']">Go to Unlock Surprise</button>
+<br><br>
+    <button class="btn default" routerLink="/" (click)="EndQuiz()">Go Back to Home ></button></div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</div>
